@@ -1,0 +1,27 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+  <script>
+    window.ARBORIST_CONFIG = {
+      bgAnimation: {{ .Site.Params.bgAnimation | default true }},
+      bgParticles: {{ .Site.Params.bgParticles | default 600 }},
+      bundleP5: {{ .Site.Params.bundleP5 | default false }}
+    };
+  </script>
+  {{ $bg := .Site.Params.bgAnimation | default true }}
+  {{ if $bg }}
+    {{ if .Site.Params.bundleP5 }}
+      <script defer src="{{ "vendor/p5.min.js" | relURL }}"></script>
+    {{ else }}
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js" crossorigin="anonymous"></script>
+    {{ end }}
+    <script defer src="{{ "js/script.js" | relURL }}"></script>
+  {{ end }}
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous">
+</head>

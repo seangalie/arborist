@@ -1,0 +1,12 @@
+baseURL      = "https://yourdomain.com/"
+languageCode = "en-us"
+title        = "Your Web Site Title"
+theme        = "arborist"
+minVersion   = "0.115.0"
+
+[params]
+  description = "A simple, customizable Linktree-style Hugo theme with profile, messaging, and link cards."
+  googleAnalytics = ""
+
+[outputs]
+  home = ["HTML"]

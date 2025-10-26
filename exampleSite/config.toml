@@ -1,0 +1,10 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Arborist Example Site"
+theme = "arborist"
+
+[params]
+  description = "Example site for the Arborist Hugo theme"
+  bgAnimation = true
+  bgParticles = 600
+  bundleP5 = false

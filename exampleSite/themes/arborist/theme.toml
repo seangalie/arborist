@@ -1,0 +1,19 @@
+name        = "arborist"
+license     = "MIT"
+licenseURL  = "https://github.com/seangalie/arborist/blob/main/LICENSE"
+min_version = "0.115.0"  
+homepage    = "https://github.com/seangalie/arborist"
+demosite    = "https://github.com/seangalie/arborist"
+description = "A simple, customizable Linktree-style Hugo theme with profile, messaging, and link cards."
+tags        = ["linktree", "responsive", "onepage"]
+features    = ["assetsMinification", "imageProcessing", "markdownRendering"]
+
+[author]
+  name      = "seangalie"
+  homepage  = "https://www.seangalie.com"
+    
+[original]
+  name      = "arborist"
+  author    = "seangalie"
+  homepage  = "https://github.com/seangalie/arborist"
+  repo      = "https://github.com/seangalie/arborist"

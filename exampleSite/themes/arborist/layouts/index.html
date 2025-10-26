@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    {{ partial "head.html" . }}
+<body>
+    <!-- Background Animation (optional: controlled by .Site.Params.bgAnimation) -->
+    {{ $bg := .Site.Params.bgAnimation | default true }}
+    {{ if $bg }}
+      <div class="bg-animation" id="bgAnimation" aria-hidden="true"></div>
+    {{ end }}
+
+    <div class="container mx-auto px-4 py-12 max-w-md">
+        <!-- Profile Section -->
+        {{ partial "profile.html" . }}
+
+        <!-- About Me section (If you want to write about yourself, uncomment the section below)--> 
+        {{ partial "about.html" . }}
+
+        <!-- Links Section -->
+        {{ partial "link-card.html" . }}
+                  
+        <!-- Embed with hue-shift filter -->
+        <!-- style="filter: hue-rotate(150deg) saturate(0.6) brightness(0.9);" -->
+
+        <!-- Instructions section (After you're done adding your links, remove or comment the line below) -->
+        {{ partial "instructions.html" . }}
+
+        <footer class="text-center text-xs opacity-60">
+            © 2025 | Made with ❤️ and <a href="https://gohugo.io/">Hugo</a> and <a href="https://github.com/seangalie/arborist">Arborist</a>
+        </footer>
+        
+    </div>
+  
+</body>
+</html>
