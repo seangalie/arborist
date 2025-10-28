@@ -5,7 +5,7 @@ profileImage: "images/profile.png"
 # Prefer placing your profileImage under `assets/images/` to enable Hugo image processing. If you place it in `static/` the theme will fall back to that path.
 name: "Your Blog Name"
 # This is your site's headline
-description: "Short Description 1 | Short Description 2 | Short Description 3"
+description: "Description 1 | Description 2 | Description 3"
 # This is your tagline, motto, credo, slogan, or role
 
 #Social Media Icons

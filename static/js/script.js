@@ -75,19 +75,19 @@ const sketch = (p) => {
             this.vy = 0;
             this.ax = 0;
             this.ay = 0;
-            this.hueSemen = Math.random();
-            this.hue = this.hueSemen > 0.5 ? 20 + opt.h1 : 20 + opt.h2;
-            this.sat = this.hueSemen > 0.5 ? opt.s1 : opt.s2;
-            this.light = this.hueSemen > 0.5 ? opt.l1 : opt.l2;
-            this.maxSpeed = this.hueSemen > 0.5 ? 3 : 2;
+            this.hueSeed = Math.random();
+            this.hue = this.hueSeed > 0.5 ? 20 + opt.h1 : 20 + opt.h2;
+            this.sat = this.hueSeed > 0.5 ? opt.s1 : opt.s2;
+            this.light = this.hueSeed > 0.5 ? opt.l1 : opt.l2;
+            this.maxSpeed = this.hueSeed > 0.5 ? 3 : 2;
         }
 
         randomize() {
-            this.hueSemen = Math.random();
-            this.hue = this.hueSemen > 0.5 ? 20 + opt.h1 : 20 + opt.h2;
-            this.sat = this.hueSemen > 0.5 ? opt.s1 : opt.s2;
-            this.light = this.hueSemen > 0.5 ? opt.l1 : opt.l2;
-            this.maxSpeed = this.hueSemen > 0.5 ? 3 : 2;
+            this.hueSeed = Math.random();
+            this.hue = this.hueSeed > 0.5 ? 20 + opt.h1 : 20 + opt.h2;
+            this.sat = this.hueSeed > 0.5 ? opt.s1 : opt.s2;
+            this.light = this.hueSeed > 0.5 ? opt.l1 : opt.l2;
+            this.maxSpeed = this.hueSeed > 0.5 ? 3 : 2;
         }
 
         update() {
